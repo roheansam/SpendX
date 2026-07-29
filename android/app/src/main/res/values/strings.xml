@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SpendX</string>
+    <string name="title_activity_main">SpendX</string>
+    <string name="package_name">com.spendx.app</string>
+    <string name="custom_url_scheme">com.spendx.app</string>
+</resources>

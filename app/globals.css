@@ -1,0 +1,354 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Google Sans", sans-serif;
+  --font-mono: "Google Sans", sans-serif;
+  --font-heading: "Google Sans", sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(0.985 0.006 95);
+  --foreground: oklch(0.16 0.018 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.018 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.018 255);
+  --primary: oklch(0.52 0.2 255);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.94 0.014 255);
+  --secondary-foreground: oklch(0.22 0.024 255);
+  --muted: oklch(0.94 0.014 255);
+  --muted-foreground: oklch(0.48 0.032 255);
+  --accent: oklch(0.92 0.05 190);
+  --accent-foreground: oklch(0.24 0.05 205);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.84 0.018 255);
+  --input: oklch(0.9 0.014 255);
+  --ring: oklch(0.58 0.16 255);
+  --chart-1: oklch(0.62 0.18 160);
+  --chart-2: oklch(0.58 0.18 255);
+  --chart-3: oklch(0.68 0.18 52);
+  --chart-4: oklch(0.6 0.2 25);
+  --chart-5: oklch(0.56 0.16 305);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0.008 255);
+  --sidebar-foreground: oklch(0.16 0.018 255);
+  --sidebar-primary: oklch(0.52 0.2 255);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.94 0.014 255);
+  --sidebar-accent-foreground: oklch(0.22 0.024 255);
+  --sidebar-border: oklch(0.84 0.018 255);
+  --sidebar-ring: oklch(0.58 0.16 255);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply font-sans;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100dvh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  body,
+  button,
+  input,
+  textarea,
+  select {
+    font-family: "Google Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .sx-screen {
+    min-height: 100dvh;
+    height: auto !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    color: var(--foreground);
+    background:
+      linear-gradient(135deg, rgba(14, 165, 233, 0.08), transparent 34%),
+      linear-gradient(315deg, rgba(16, 185, 129, 0.1), transparent 30%),
+      var(--background);
+  }
+
+  .dark .sx-screen {
+    background:
+      linear-gradient(135deg, rgba(79, 70, 229, 0.16), transparent 34%),
+      linear-gradient(315deg, rgba(20, 184, 166, 0.1), transparent 30%),
+      var(--background);
+  }
+
+  .sx-card {
+    border: 1px solid color-mix(in oklab, var(--border) 78%, transparent);
+    background: color-mix(in oklab, var(--card) 78%, transparent);
+    box-shadow: 0 18px 50px color-mix(in oklab, var(--foreground) 11%, transparent);
+    backdrop-filter: blur(24px) saturate(170%);
+  }
+
+  .dark .sx-card {
+    background: rgba(255, 255, 255, 0.035);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.42);
+  }
+
+  .sx-panel {
+    border: 1px solid color-mix(in oklab, var(--border) 72%, transparent);
+    background: color-mix(in oklab, var(--card) 66%, transparent);
+  }
+
+  .dark .sx-panel {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .sx-title {
+    color: var(--foreground);
+  }
+
+  .sx-muted {
+    color: var(--muted-foreground);
+  }
+
+  .sx-chip {
+    border: 1px solid color-mix(in oklab, var(--border) 72%, transparent);
+    background: color-mix(in oklab, var(--card) 58%, transparent);
+    color: var(--muted-foreground);
+  }
+
+  .sx-field {
+    border: 1px solid color-mix(in oklab, var(--border) 82%, transparent);
+    background: color-mix(in oklab, var(--card) 82%, transparent);
+    color: var(--foreground);
+  }
+
+  .sx-field:focus {
+    border-color: color-mix(in oklab, var(--primary) 60%, transparent);
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 16%, transparent);
+  }
+
+  .sx-primary-button {
+    background: linear-gradient(135deg, oklch(0.52 0.2 255), oklch(0.62 0.17 190));
+    color: white;
+    box-shadow: 0 12px 28px color-mix(in oklab, var(--primary) 28%, transparent);
+  }
+
+  .sx-secondary-button {
+    border: 1px solid color-mix(in oklab, var(--border) 82%, transparent);
+    background: color-mix(in oklab, var(--card) 55%, transparent);
+    color: var(--foreground);
+  }
+
+  .light .sx-screen [class*="border-white/"] {
+    border-color: color-mix(in oklab, var(--border) 78%, transparent) !important;
+  }
+
+  .light .sx-screen [class*="bg-white/"],
+  .light .sx-screen [class*="bg-black/"],
+  .light .sx-screen [class*="bg-zinc-950"] {
+    background-color: color-mix(in oklab, var(--card) 72%, transparent) !important;
+  }
+
+  .light .sx-screen [class*="text-zinc-"],
+  .light .sx-screen [class*="text-white/"] {
+    color: var(--muted-foreground) !important;
+  }
+
+  .light .sx-screen :is(h1, h2, h3, h4, strong) {
+    color: var(--foreground);
+  }
+
+  .light .sx-screen :is(input, select, textarea, button) {
+    color: inherit;
+  }
+
+  .light .sx-screen :is(input, select, textarea) {
+    background-color: color-mix(in oklab, var(--card) 82%, transparent) !important;
+    border-color: color-mix(in oklab, var(--border) 82%, transparent) !important;
+    color: var(--foreground) !important;
+  }
+
+  .light .sx-screen ::placeholder {
+    color: var(--muted-foreground);
+  }
+
+  .light .sx-screen [class*="text-white"]:not([class*="bg-"]):not([class*="text-white/"]) {
+    color: var(--foreground) !important;
+  }
+
+  .light .sx-screen [class*="bg-gradient"] [class*="text-white"],
+  .light .sx-screen [class*="bg-emerald"] [class*="text-white"],
+  .light .sx-screen [class*="bg-blue"] [class*="text-white"],
+  .light .sx-screen [class*="bg-indigo"] [class*="text-white"],
+  .light .sx-screen [class*="bg-violet"] [class*="text-white"],
+  .light .sx-screen [class*="bg-red"] [class*="text-white"] {
+    color: white !important;
+  }
+
+  .ios-clear-navbar {
+    isolation: isolate;
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.045) 42%, rgba(255, 255, 255, 0.12)),
+      rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.7),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.12),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+      0 18px 42px rgba(0, 0, 0, 0.34);
+    -webkit-backdrop-filter: blur(12px) saturate(210%) contrast(1.08);
+    backdrop-filter: blur(12px) saturate(210%) contrast(1.08);
+  }
+
+  .ios-clear-navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background:
+      radial-gradient(circle at 18% 8%, rgba(255, 255, 255, 0.62), transparent 24%),
+      radial-gradient(circle at 86% 92%, rgba(255, 255, 255, 0.2), transparent 28%),
+      linear-gradient(100deg, rgba(255, 255, 255, 0.12), transparent 36%, rgba(255, 255, 255, 0.16) 72%, transparent);
+    opacity: 0.8;
+  }
+
+  .ios-clear-navbar::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    pointer-events: none;
+    border-radius: inherit;
+    box-shadow:
+      inset 0 0 24px rgba(255, 255, 255, 0.09),
+      inset 0 -18px 34px rgba(255, 255, 255, 0.055);
+  }
+
+  .ios-clear-active {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.065)),
+      rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.76),
+      inset 0 -14px 24px rgba(255, 255, 255, 0.08),
+      0 8px 22px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(9px) saturate(230%) contrast(1.08);
+    backdrop-filter: blur(9px) saturate(230%) contrast(1.08);
+  }
+}
+
+@utility liquid-glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.12) inset,
+    0 24px 48px -12px rgba(0, 0, 0, 0.6),
+    0 0 1px 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+@utility active-glass-pill {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.25) inset,
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    inset 0 0 12px rgba(255, 255, 255, 0.06);
+}
+
+@utility hover-glass-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
