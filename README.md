@@ -5,6 +5,7 @@ A modern AI-powered personal finance tracker that helps users manage expenses, v
 SpendX is a full-stack personal finance management application built with Next.js, TypeScript, Supabase, Tailwind CSS, and Capacitor. It enables users to securely track income and expenses, analyze spending habits, and receive AI-powered financial insights through an intuitive, responsive interface.
 
 🚀 Features
+
 🔐 Authentication
 Secure Google Sign-In
 Email & Password Authentication
