@@ -12,6 +12,7 @@ Email & Password Authentication
 Protected Routes
 User Profile Management
 Session Persistence
+
 📊 Dashboard
 Financial Overview
 Current Balance
@@ -22,6 +23,7 @@ Recent Transactions
 Quick Statistics
 Beautiful Cards
 Responsive Layout
+
 💰 Expense Management
 Add Expenses
 Edit Expenses
@@ -32,6 +34,7 @@ Date Tracking
 Search Expenses
 Filter Transactions
 Sort Records
+
 💵 Income Management
 Add Income
 Edit Income
@@ -39,6 +42,7 @@ Delete Income
 Income Categories
 Monthly Tracking
 Income History
+
 📈 Analytics
 Expense Breakdown
 Income vs Expense Analysis
@@ -48,6 +52,7 @@ Category-wise Analysis
 Financial Summary
 Interactive Charts
 Data Visualization
+
 🤖 AI Features
 
 SpendX includes AI-powered financial assistance that helps users:
@@ -58,12 +63,14 @@ Suggest better budgeting
 Provide personalized financial insights
 Answer finance-related questions
 Recommend saving strategies
+
 ⚙️ Settings
 Dark Mode
 Light Mode
 Profile Settings
 Account Management
 Theme Switching
+
 📱 Mobile App
 
 Built using Capacitor, allowing the web application to run as a native Android application.
@@ -76,6 +83,7 @@ Responsive Design
 Touch Friendly Components
 Native App Icon
 Splash Screen
+
 🛠️ Tech Stack
 Frontend
 Next.js 16
@@ -99,6 +107,7 @@ Capacitor
 Android Studio
 Deployment
 Vercel
+
 📂 Project Structure
 SpendX
 │
@@ -127,6 +136,7 @@ SpendX
 ├── package.json
 │
 └── README.md
+
 📸 Screenshots
 
 Add screenshots here.
@@ -152,6 +162,7 @@ Example:
 ## Analytics
 
 ![Analytics](screenshots/analytics.png)
+
 ⚡ Installation
 
 Clone the repository
@@ -198,6 +209,7 @@ npx cap open android
 
 Generate APK from Android Studio.
 
+
 🎨 UI Highlights
 Modern Glassmorphism Design
 Smooth Animations
@@ -208,6 +220,7 @@ Beautiful Cards
 Dark Mode
 Elegant Typography
 Interactive Charts
+
 🔒 Security
 Secure Authentication
 Protected API Routes
@@ -215,6 +228,7 @@ User Data Isolation
 Environment Variables
 Secure Database Access
 OAuth Authentication
+
 📊 Future Enhancements
 AI Budget Planner
 Recurring Transactions
@@ -231,6 +245,7 @@ Offline Mode
 Expense Predictions
 Smart Categorization
 Financial Score
+
 🤝 Contributing
 
 Contributions are welcome!
@@ -243,6 +258,7 @@ git commit -m "Add new feature"
 Push changes
 git push origin feature-name
 Open a Pull Request
+
 🧪 Testing
 
 Run the development server
